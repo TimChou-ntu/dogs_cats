@@ -1,4 +1,3 @@
-```markdown
 # Dogs vs. Cats Image Classification
 
 This repository contains code for a simple image classification project that distinguishes between images of dogs and cats. It uses a convolutional neural network (CNN) to perform the classification task. You can train and evaluate the model with different configurations using the provided script.
