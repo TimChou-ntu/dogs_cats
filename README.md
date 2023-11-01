@@ -46,7 +46,7 @@ You can configure various aspects of the training process by using command-line 
 - `--learning-rate`: Learning rate.
 - `--gamma`: Learning rate step gamma.
 - `--max-epochs`: Number of epochs to train.
-- `--image_output_path`: Path to save images.
+- `--image_output_path`: Path to save ROC and confusion matrix images.
 - `--eval`: Evaluate the model on the validation set.
 - `--ckpt-path`: Path to the checkpoint folder or a direct path to a checkpoint file.
 
@@ -87,6 +87,21 @@ The performance of the default configuration is as follows:
 - Validation Accuracy: 0.9500
 - Validation Recall: 0.9556
 - Validation Loss: 0.1238 (cross entropy loss)
+
+## ROC Curve
+
+![ROC Curve](./10_ROC.png)
+
+This ROC curve illustrates the trade-off between the true positive rate and the false positive rate for your classification model. A well-performing model will have a curve that approaches the top-left corner of the plot.
+
+## Confusion Matrix
+
+![Confusion Matrix](./10_confusion_matrix.png)
+
+The confusion matrix provides a detailed view of your model's performance, showing the number of true positive, true negative, false positive, and false negative predictions. It's a valuable tool for understanding the model's strengths and weaknesses in classification tasks.
+
+You can generate these visualizations and save them in the folder you specified in configuration --image_output_path.
+
 
 ## Reproducibility
 
