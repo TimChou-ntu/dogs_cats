@@ -1,0 +1,2 @@
+training command: python train.py --dataset-path ./dogs-vs-cats/train/train/
+validation command: python train.py --dataset-path ./dogs-vs-cats/train/train/ --eval
